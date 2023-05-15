@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "823934224169",
+    "firebase_url": "https://axiebound-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "axiebound",
+    "storage_bucket": "axiebound.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823934224169:android:b4eb32fe4cc35088d35938",
+        "android_client_info": {
+          "package_name": "com.axiebound.game"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823934224169-blajoq9kqrqru5gelo1qmh848v6h5tun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmPo54w1MW10_8OMYFNWX944Ky4aQpRFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823934224169-blajoq9kqrqru5gelo1qmh848v6h5tun.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "823934224169-3kulrglnui0oj7k5d9g09or5pn5lp8l6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.axiebound.game"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
