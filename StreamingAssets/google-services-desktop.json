@@ -1,41 +1,41 @@
 {
   "project_info": {
-    "project_number": "823934224169",
-    "firebase_url": "https://axiebound-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "axiebound",
-    "storage_bucket": "axiebound.appspot.com"
+    "project_number": "438547855312",
+    "firebase_url": "https://axie-sky-smash-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "axie-sky-smash",
+    "storage_bucket": "axie-sky-smash.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:823934224169:android:b4eb32fe4cc35088d35938",
+        "mobilesdk_app_id": "1:438547855312:android:51127e93f84edc2000ebd5",
         "android_client_info": {
-          "package_name": "com.axiebound.game"
+          "package_name": "app.skysmash.io"
         }
       },
       "oauth_client": [
         {
-          "client_id": "823934224169-blajoq9kqrqru5gelo1qmh848v6h5tun.apps.googleusercontent.com",
+          "client_id": "438547855312-lnfsafsuj9g6a4craugunkdlbpma0sgp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCmPo54w1MW10_8OMYFNWX944Ky4aQpRFU"
+          "current_key": "AIzaSyChIuADy0cSLYmSDSyC892uWh0rTGbR6O0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "823934224169-blajoq9kqrqru5gelo1qmh848v6h5tun.apps.googleusercontent.com",
+              "client_id": "438547855312-lnfsafsuj9g6a4craugunkdlbpma0sgp.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "823934224169-3kulrglnui0oj7k5d9g09or5pn5lp8l6.apps.googleusercontent.com",
+              "client_id": "438547855312-4knkc3nki8oca97qog4lvhui7vh6tec9.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.axiebound.game"
+                "bundle_id": "app.skysmash.io"
               }
             }
           ]
