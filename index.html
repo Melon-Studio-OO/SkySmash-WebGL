@@ -106,6 +106,7 @@
 
     var script = document.createElement("script");
     script.src = loaderUrl;
+
     script.onload = () => {
       createUnityInstance(canvas, config, (progress) => {
         progressBarFull.style.width = 100 * progress + "%";
@@ -126,26 +127,41 @@
   <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp, } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+	  import { getAuth, signInWithPopup, signOut, GoogleAuthProvider, FacebookAuthProvider, OAuthProvider } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
     import { getAnalytics, logEvent, setAnalyticsCollectionEnabled, setUserId, setUserProperties, } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
 
-    const firebaseConfig = {
-      apiKey: "AIzaSyDvENqkoQrJUlICD9VMM11uNo-WZoUHbwQ",
-      authDomain: "axiebound.firebaseapp.com",
-      databaseURL: "https://axiebound-default-rtdb.asia-southeast1.firebasedatabase.app",
-      projectId: "axiebound",
-      storageBucket: "axiebound.appspot.com",
-      messagingSenderId: "823934224169",
-      appId: "1:823934224169:web:f0b49c5ff3f2ec75d35938",
-      measurementId: "G-VDLNQDP8DF",
-    };
+	const firebaseConfig = {
+		apiKey: "AIzaSyDffhl_mKQm9UW1KhOptdwAt-pv7WOGkSM",
+		authDomain: "axie-sky-smash.firebaseapp.com",
+		projectId: "axie-sky-smash",
+		storageBucket: "axie-sky-smash.appspot.com",
+		messagingSenderId: "438547855312",
+		appId: "1:438547855312:web:14f02b26e14050c900ebd5",
+		measurementId: "G-5ZT29VBEGC"
+	};
 
-    const app = initializeApp(firebaseConfig);
-    window.firebaseAnalytics = getAnalytics(app);
+  const app = initializeApp(firebaseConfig);
+  window.firebaseAnalytics = getAnalytics(app);
 
-    window.firebaseLogEvent = logEvent;
-    window.firebaseSetAnalyticsCollectionEnabled = setAnalyticsCollectionEnabled;
-    window.firebaseSetUserId = setUserId;
-    window.firebaseSetUserProperties = setUserProperties;
+  window.firebaseLogEvent = logEvent;
+  window.firebaseSetAnalyticsCollectionEnabled = setAnalyticsCollectionEnabled;
+  window.firebaseSetUserId = setUserId;
+  window.firebaseSetUserProperties = setUserProperties;
+	
+	window.firebaseAuth = getAuth();
+	window.firebaseGoogleProvider = new GoogleAuthProvider();
+	window.firebaseGoogleProvider.addScope('https://www.googleapis.com/auth/userinfo.email');
+
+	window.firebaseFacebookProvider = new FacebookAuthProvider();
+	window.firebaseAppleProvider = new OAuthProvider("apple.com");
+
+	window.firebaseSignInWithPopup = signInWithPopup;
+	window.firebaseSignOut = signOut;
+	window.firebaseGetAuth = getAuth;
+
+	window.GoogleAuthProvider = GoogleAuthProvider;
+	window.FacebookAuthProvider = FacebookAuthProvider;
+	window.OAuthProvider = OAuthProvider;
   </script>
 </body>
 
